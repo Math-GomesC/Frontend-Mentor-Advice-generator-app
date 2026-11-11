@@ -6,9 +6,9 @@
 :root {
   --cor-botao-e-titulo: hsl(150, 100%, 66%); /*Blue 200:*/
   --cor-texto: hsl(193, 38%, 86%); /*Green 300:*/
-  --cor-card: hsl(217, 19%, 38%); /*Blue 600:*/
-  --cor-fundo: hsl(217, 19%, 24%); /*Blue 900:*/
-  --cor-sombra-do-card: hsl(218, 23%, 16%); /*Blue 950*/
+  --cor-sombra-do-card: hsl(217, 19%, 38%); /*Blue 600:*/
+  --cor-card: hsl(217, 19%, 24%); /*Blue 900:*/
+  --cor-fundo: hsl(218, 23%, 16%); /*Blue 950*/
   --fonte-principal: 'Manrope', sans-serif;
   font-weight: 800;
   font-size: 28px;
@@ -17,7 +17,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  /*border: solid 1px red;*/
+
 }
 
 body {
@@ -29,7 +29,7 @@ body {
 }
 
 article {
-  box-shadow: var(--cor-sombra-do-card) 0px 5px 15px;
+  align-items: center;
   border-radius: 15px;
   background-color: var(--cor-card);
   text-align: center;
@@ -50,16 +50,14 @@ h2 {
 p{
   font-family: var(--fonte-principal);
   padding: 30px;
-  margin: 45px;
-  border: 1px solid red;
+  margin:  0 45px;
   color: var(--cor-texto);
 }
 
 .Divisor-Card {
   height: 20px;
-  border: 1px red solid;
-  margin: 10px 50px;
-  
+  margin: 10px 0px;
+  align-items: center;
 }
 
 button {
@@ -67,7 +65,6 @@ button {
   border: none;
   border-radius: 50%;
   position: relative;
-  left: 46%;
   top: 30px;
   display: flex;
   justify-content: center;
