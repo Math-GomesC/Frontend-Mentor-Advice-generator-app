@@ -17,7 +17,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  border: solid 1px red;
+  /*border: solid 1px red;*/
 }
 
 body {
@@ -29,34 +29,55 @@ body {
 }
 
 article {
+  box-shadow: var(--cor-sombra-do-card) 0px 5px 15px;
+  border-radius: 15px;
+  background-color: var(--cor-card);
   text-align: center;
   display: flex;
   flex-direction: column;
-  border: 1px red solid;
   flex-wrap: wrap;
-  width: 45%;
+  width: 40%;
 }
 
 h2 {
   color: var(--cor-botao-e-titulo);
+  font-family: var(--fonte-principal);
+  font-size: 18px;
+  letter-spacing:2px;
+  margin:45px 0 0 0;
+}
+
+p{
+  font-family: var(--fonte-principal);
+  padding: 30px;
+  margin: 45px;
+  border: 1px solid red;
+  color: var(--cor-texto);
 }
 
 .Divisor-Card {
-  height: 100%;
-}
-
-.Imagem-Botao {
-  height: auto;
-  max-width: 70px;
+  height: 20px;
+  border: 1px red solid;
+  margin: 10px 50px;
+  
 }
 
 button {
-  justify-content: center;
-  display: flex;
+  cursor: pointer;
+  border: none;
   border-radius: 50%;
-  padding: 10px;
-  width: 50px;
+  position: relative;
+  left: 46%;
+  top: 30px;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
   height: auto;
+  width: 55px;
   background-color: var(--cor-botao-e-titulo);
-  flex-wrap: wrap;
 }
+
+button:hover{
+box-shadow: var(--cor-botao-e-titulo) 0px 5px 25px;
+}
+
