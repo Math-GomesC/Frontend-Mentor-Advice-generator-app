@@ -22,7 +22,6 @@
 
 body {
   min-height: 100vh;
-  flex-wrap: wrap;
   background-color: var(--cor-fundo);
 }
 
@@ -34,6 +33,7 @@ article {
   border-radius: 15px;
   text-align: center;
   padding: 15px;
+  max-width: 450px;
 }
 
 h2 {
@@ -53,7 +53,7 @@ p {
 }
 
 .Divisor-Card {
-  margin-top: 20px;
+ margin-top: 15px;
 }
 
 button {
@@ -64,11 +64,11 @@ button {
   border-radius: 50%;
   border: none;
   cursor: pointer;
-  position: relative;
-  width: 16%;
-  left: 42%;
+  width: 50px;
   background-color: var(--cor-botao-e-titulo);
+  position: relative;
   top: 40px;
+  left: 42%;
 }
 
 button:hover {
@@ -77,4 +77,20 @@ button:hover {
 
 .Imagem-Botao {
   height: 20px;
+}
+
+
+@media screen and (min-width:500px){ 
+  body{
+    display: flex;
+    justify-content: center;
+  }
+  article{
+    position: absolute;
+     margin:0;
+     top: 25%;
+  }
+  button{
+    left: 45%;
+  }
 }
